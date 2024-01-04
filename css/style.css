@@ -82,8 +82,6 @@
     --md-sys-color-surface-tint-light: var(--md-ref-palette-primary40);
     --md-sys-color-scrim-light: var(--md-ref-palette-neutral0);
 
-    --background-color-card: #fff;
-
     /*--background-color-alt: #f7f7f7;*/
     --background-color-alt: var(--md-ref-palette-neutral95);
 }
@@ -101,6 +99,7 @@ h2{color:var(--md-sys-color-primary);}
 .promo i{color:var(--md-sys-color-primary);font-size:7rem;}
 nav ul a{letter-spacing:2px;font-weight:300;}
 
+#work.card, #member.card { background-color: #fff; }
 .card-container { gap: 1rem; }
 .member-description { gap: 1rem; line-height: 1.2; }
 .member-img-container { aspect-ratio: 4/3; }
@@ -112,6 +111,10 @@ nav ul a{letter-spacing:2px;font-weight:300;}
 .yt-btn-container { margin-top: auto; }
 
 #contact h3 {font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; }
+#contact .card {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
 
 footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; color: var(--md-sys-color-on-primary) }
 
