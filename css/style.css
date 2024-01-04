@@ -103,7 +103,7 @@ nav {
 .promo i{color:var(--md-sys-color-primary);font-size:7rem;}
 nav ul a{letter-spacing:2px;font-weight:300;}
 
-#work.card, #member.card { background-color: #fff; }
+#work .card, #member .card { background-color: #fff; }
 .card-container { gap: 1rem; }
 .member-description { gap: 1rem; line-height: 1.2; }
 .member-img-container { aspect-ratio: 4/3; }
