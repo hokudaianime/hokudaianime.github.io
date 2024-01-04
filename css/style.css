@@ -86,11 +86,15 @@
     --background-color-alt: var(--md-ref-palette-neutral95);
 }
 
-.default_color{background-color: var(--md-sys-color-primary) !important}
 .section:nth-child(odd) { background:var(--background-color-alt); }
 h2{color:var(--md-sys-color-primary);}
 
+nav { 
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
 .brand-logo{letter-spacing:7px;}
+
 #index-banner{max-height:864px;position:relative;background-color:var(--md-sys-color-primary);}
 #banner-image{width: 100%; height: auto;}
 
