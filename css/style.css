@@ -10,6 +10,7 @@
     --secondary-color-hover-solid: #30B0A4;
     --secondary-color-focus-solid: #44C4B8;
     */
+    /* primary colorのみ元の色と合わせるため本来の輝度を約0.52乗した */
     --md-ref-palette-primary0: #000000;
     --md-ref-palette-primary10: #8e1229;
     --md-ref-palette-primary20: #b53b46;
@@ -28,39 +29,37 @@
     --md-ref-palette-primary100: #ffffff;
 
     --md-ref-palette-neutral0: #000000;
-    --md-ref-palette-neutral10: #4e4544;
-    --md-ref-palette-neutral20: #6e6463;
-    --md-ref-palette-neutral25: #7b7271;
-    --md-ref-palette-neutral30: #877e7d;
-    --md-ref-palette-neutral35: #938988;
-    --md-ref-palette-neutral40: #9e9493;
-    --md-ref-palette-neutral50: #b2a8a7;
-    --md-ref-palette-neutral60: #c5bbba;
-    --md-ref-palette-neutral70: #d7cdcc;
-    --md-ref-palette-neutral80: #e8dddc;
-    --md-ref-palette-neutral90: #f8edec;
-    --md-ref-palette-neutral95: #fff5f4;
-    --md-ref-palette-neutral98: #fffbfb;
-    --md-ref-palette-neutral99: #fffdfd;
+    --md-ref-palette-neutral10: #201a1a;
+    --md-ref-palette-neutral20: #362f2e;
+    --md-ref-palette-neutral25: #413a39;
+    --md-ref-palette-neutral30: #4d4545;
+    --md-ref-palette-neutral35: #595050;
+    --md-ref-palette-neutral40: #655c5c;
+    --md-ref-palette-neutral50: #7f7574;
+    --md-ref-palette-neutral60: #998e8e;
+    --md-ref-palette-neutral70: #b4a9a8;
+    --md-ref-palette-neutral80: #d0c4c3;
+    --md-ref-palette-neutral90: #ece0df;
+    --md-ref-palette-neutral95: #fbeeed;
+    --md-ref-palette-neutral98: #fff8f7;
+    --md-ref-palette-neutral99: #fffbff;
     --md-ref-palette-neutral100: #ffffff;
 
     --md-ref-palette-neutral-variant0: #000000;
-    --md-ref-palette-neutral-variant5: #3b2a2a;
-    --md-ref-palette-neutral-variant10: #4f3d3d;
-    --md-ref-palette-neutral-variant15: #604d4e;
-    --md-ref-palette-neutral-variant20: #6f5c5c;
-    --md-ref-palette-neutral-variant25: #7d6969;
-    --md-ref-palette-neutral-variant30: #8a7575;
-    --md-ref-palette-neutral-variant35: #968181;
-    --md-ref-palette-neutral-variant40: #a18c8c;
-    --md-ref-palette-neutral-variant50: #b6a1a1;
-    --md-ref-palette-neutral-variant60: #cab4b4;
-    --md-ref-palette-neutral-variant70: #ddc7c7;
-    --md-ref-palette-neutral-variant80: #efd9d8;
-    --md-ref-palette-neutral-variant90: #ffeaea;
-    --md-ref-palette-neutral-variant95: #fff4f4;
-    --md-ref-palette-neutral-variant98: #fffbfb;
-    --md-ref-palette-neutral-variant99: #fffdfd;
+    --md-ref-palette-neutral-variant10: #251818;
+    --md-ref-palette-neutral-variant20: #3b2d2d;
+    --md-ref-palette-neutral-variant25: #463838;
+    --md-ref-palette-neutral-variant30: #524343;
+    --md-ref-palette-neutral-variant35: #5f4f4e;
+    --md-ref-palette-neutral-variant40: #6b5a5a;
+    --md-ref-palette-neutral-variant50: #857372;
+    --md-ref-palette-neutral-variant60: #a08c8c;
+    --md-ref-palette-neutral-variant70: #bba6a6;
+    --md-ref-palette-neutral-variant80: #d7c1c1;
+    --md-ref-palette-neutral-variant90: #f4dddc;
+    --md-ref-palette-neutral-variant95: #ffedec;
+    --md-ref-palette-neutral-variant98: #fff8f7;
+    --md-ref-palette-neutral-variant99: #fffbff;
     --md-ref-palette-neutral-variant100: #ffffff;
     
     --md-sys-color-primary-light: var(--md-ref-palette-primary40);
