@@ -96,6 +96,7 @@ nav {
 
 #index-banner{max-height:864px;position:relative;background-color:var(--md-sys-color-primary);}
 #banner-image{width: 100%; height: auto;}
+.page-title { padding: 1rem 0; background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); }
 
 #intro h3 { color:var(--md-sys-color-primary); }
 .promo-headline { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0;}
