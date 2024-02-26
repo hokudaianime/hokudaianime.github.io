@@ -1,5 +1,4 @@
 - year: 2023
-  icon: "new_releases"
   members:
     - name: "にんにく"
       faculty: "工学部" 
@@ -42,7 +41,6 @@
       description: "工事中"
       img: "00NoImage.jpg"
 - year: 2022
-  icon: "join_full"
   members:
     - name: "びこいど"
       faculty: "農学部" 
@@ -65,7 +63,6 @@
       description: "工事中"
       img: "00NoImage.jpg"
 - year: 2021
-  icon: "balance"
   members:
     - name: "まっちゃちゃ"
       faculty: "文学部" 
