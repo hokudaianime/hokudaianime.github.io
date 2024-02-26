@@ -1,0 +1,52 @@
+---
+title: Past Members
+layout: default
+---
+<main>
+  <div class="page-title">
+    <div class="container">
+      <h1 class="center-align">{{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2>過去に在籍した会員</h2>
+        {% assign oldest_year = 0 %}
+        {% for year_group in site.data.past_members_list %}
+        <section class="section">
+          {% if year_group.year == 0 %}
+          <h3>{{ oldest_year | minus: 1 }}年度以前入会</h3>
+          {% else %}
+          {% assign oldest_year = year_group.year %}
+          <h3>{{ year_group.year }}年度入会</h3>
+          {% endif %}
+          <div class="row card-container">
+            {% for member in year_group.members %}
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="row member-description">
+                    <div class="col s6">
+                      <div class="member-img-container">
+                        <img class="responsive-img member-img" src="/img/member/{{ member.img }}" alt="">
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <span class="card-title">{{ member.name }}</span>
+                      所属 / {{ member.faculty }}
+                      <div class="divider"></div>
+                      {{ member.description }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>
