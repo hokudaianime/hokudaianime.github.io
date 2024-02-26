@@ -5,18 +5,18 @@ layout: default
 <main>
   <div class="page-title">
     <div class="container">
-      <h1 class="center-align">Members</h1>
+      <h1 class="center-align">{{ page.title }}</h1>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col s12">
         <h2>現在の会員</h2>
-        {% for year in site.data.members_list %}
+        {% for year_group in site.data.members_list %}
         <section class="section">
-          <h3><i class="material-icons">{{ year.icon }}</i>{{ year.year }}年度入会</h3>
+          <h3><i class="material-icons">{{ year_group.icon }}</i>{{ year_group.year }}年度入会</h3>
           <div class="row card-container">
-            {% for member in year.members %}
+            {% for member in year_group.members %}
             <div class="col s12 m6 l4">
               <div class="card">
                 <div class="card-content">
