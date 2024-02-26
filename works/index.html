@@ -1,0 +1,68 @@
+---
+title: Works
+layout: default
+---
+<main>
+  <div class="page-title">
+    <div class="container">
+      <h1 class="center-align">{{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2>制作作品</h2>
+        {% for decade_group in site.data.works_list %}
+        <section class="section">
+          {% if decade_group.decade == 9990 %}
+          <h3>制作中</h3>
+          {% else %}
+          <h3>{{ decade_group.decade }}年代完成</h3>
+          {% endif %}
+          <div class="row card-container work-card-container">
+            {% for work in decade_group.works %}
+            <div class="col s12 m6 l4 xl3">
+              <div class="card work-card">
+                <div class="card-image">
+                  <div class="work-img-container">
+                    <img class="responsive-img work-img" src="/img/works/{{ work.img }}" alt="">
+                  </div>
+                </div>
+                <div class="card-content work-card-content">
+                  <div class="card-title">{{ work.title }}</div>
+                  <div>
+                    <div class="divider"></div>
+                    <p class="work-metadata">
+                      {% if work.completion_str %}
+                      {% if work.completion_datetime_str %}
+                      完成 / <time datetime="{{ work.completion_datetime_str }}">{{ work.completion_str }}</time><br>
+                      {% else %}
+                      完成 / {{ work.completion_str }}</time><br>
+                      {% endif %}
+                      {% elsif work.completion_datetime %}
+                      完成 / <time datetime="{{ work.completion_datetime | date: '%Y-%m' }}">{{ work.completion_datetime | date: "%Y年%-m月" }}</time><br>
+                      {% else %}
+                      完成 / 不明<br>
+                      {% endif %}
+                      監督 / {{ work.director }}<br>
+                      時間 / {{ work.length }}
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                  <div>
+                    <p>{{ work.description }}</p>
+                  </div>
+                  {% if work.yt_url %}
+                  <div class="right-align yt-btn-container"><a href="{{ work.yt_url }}" class="waves-effect waves-light btn-small" target="_blank" rel="noopener">YouTube<i class="material-icons">open_in_new</i></a></div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>
