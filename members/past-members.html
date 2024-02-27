@@ -12,6 +12,11 @@ layout: default
     <div class="row">
       <div class="col s12">
         <h2>過去に在籍した会員</h2>
+        <div class="center-align">
+          <a href="/members/" class="btn text icon-right waves-effect center-align">
+            現在の会員を見る<i class="material-icons">chevron_right</i>
+          </a>
+        </div>
         {% assign oldest_year = 0 %}
         {% for year_group in site.data.past_members_list %}
         <section class="section">
