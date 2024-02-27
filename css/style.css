@@ -126,7 +126,8 @@ nav ul a{letter-spacing:2px;font-weight:300;}
     color: var(--md-sys-color-on-primary);
 }
 
-footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; color: var(--md-sys-color-on-primary) }
+h2 { text-align: center; }
+footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; color: var(--md-sys-color-on-primary); text-align: start; }
 
 /* オリジナルからカスタム */
 html {
