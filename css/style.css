@@ -137,8 +137,7 @@ footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: cal
 #contact .card { background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); }
 
 /* works */
-.work-card-container { gap: 0px }
-.work-card-container > .col { margin: 0.5rem; display: grid; grid-template-rows: subgrid; grid-row: span 5; gap: 0px; }
+.work-card-container > .col { display: grid; grid-template-rows: subgrid; grid-row: span 5; gap: 0px; }
 .work-card-container .card { display: inherit; grid-template-rows: inherit; grid-row: inherit; gap: inherit; }
 .work-card-container .card .card-image { grid-row: span 1; gap: inherit; }
 .work-card-container .card .card-content { display: inherit; grid-template-rows: inherit; grid-row: span 4; gap: inherit; }
