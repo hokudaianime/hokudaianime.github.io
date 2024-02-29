@@ -3,9 +3,9 @@ title: TOP
 layout: default
 ---
 <main class="toppage">
-  <section class="section" id="index-banner">
+  <section class="page-title" id="toppage-banner">
     <div class="container">
-      <h1><img src="img/hero2.png" id="banner-image" width="1235" height="503" alt="北海道大学アニメーション研究会 HAL 公式webサイト"></h1>
+      <h1><img src="img/hero2.png" width="1235" height="503" alt="北海道大学アニメーション研究会 HAL 公式webサイト"></h1>
     </div>
   </section>
   <section id="intro" class="section">
@@ -86,34 +86,32 @@ layout: default
       </div>
     </div>
   </section>
-  <section class="section" id="work">
+  <section class="section" id="works">
     <div class="container">
       <h2 class="header">Works</h2>
       <div class="row">
-        <div class="col s12 m6">
-          <div class="img-matrix center-align">
-            <div class="row">
-              {% assign work_img_num = 0 %}
-              {% for decade_group in site.data.works_list %}
-              {% for work in decade_group.works %}
-              <div class="col s4">
-                <div class="img-matrix-img-container">
-                  <img class="responsive-img work-img" src="/img/works/{{ work.img }}" alt="">
-                </div>
+        <div class="col s12 m6 img-side">
+          <div class="row">
+            {% assign work_img_num = 0 %}
+            {% for decade_group in site.data.works_list %}
+            {% for work in decade_group.works %}
+            <div class="col s4">
+              <div class="img-matrix-img-container work-img-container">
+                <img class="responsive-img" src="/img/works/{{ work.img }}" alt="">
               </div>
-              {% capture work_img_num %}{{ work_img_num | plus: 1 }}{% endcapture %}
-              {% if work_img_num == "9" %}
-              {% break %}
-              {% endif %}
-              {% endfor %}
-              {% if work_img_num == "9" %}
-              {% break %}
-              {% endif %}
-              {% endfor %}
             </div>
+            {% capture work_img_num %}{{ work_img_num | plus: 1 }}{% endcapture %}
+            {% if work_img_num == "9" %}
+            {% break %}
+            {% endif %}
+            {% endfor %}
+            {% if work_img_num == "9" %}
+            {% break %}
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
-        <div class="col s12 m6 vertical-center">
+        <div class="col s12 m6 flex-center">
           <div class="center-align">
             <p>
               北大アニメーション研究会が今までに制作した作品。
@@ -124,20 +122,18 @@ layout: default
       </div>
     </div>
   </section>
-  <section class="section" id="booklet">
+  <section class="section" id="booklets">
     <div class="container">
       <h2 class="header">Booklets</h2>
       <div class="row">
-        <div class="col s12 m6">
-          <div class="booklets-sect">
-            {% for booklet in site.data.booklets_list limit:3 %}
-            <div class="booklet-img-container">
-              <img class="responsive-img z-depth-1" src="img/booklets/{{ booklet.img }}" alt="">
-            </div>
-            {% endfor %}
+        <div class="col s12 m6 img-side">
+          {% for booklet in site.data.booklets_list limit:3 %}
+          <div class="booklet-img-container">
+            <img class="responsive-img z-depth-1" src="img/booklets/{{ booklet.img }}" alt="">
           </div>
+          {% endfor %}
         </div>
-        <div class="col s12 m6 vertical-center">
+        <div class="col s12 m6 flex-center">
           <div class="center-align">
             <p>
               会誌。
@@ -148,34 +144,32 @@ layout: default
       </div>
     </div>
   </section>
-  <section class="section" id="member">
+  <section class="section" id="members">
     <div class="container">
       <h2 class="header">Members</h2>
       <div class="row">
-        <div class="col s12 m6">
-          <div class="row members-sect">
-            {% assign member_img_num = 0 %}
-            {% for year_group in site.data.members_list %}
-            {% for member in year_group.members %}
-            {% if member.img %}
-            <div class="member-img-container">
-              <img class="responsive-img member-img" src="/img/member/{{ member.img }}" alt="">
-            </div>
-            {% capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
-            {% else %}
-            {% continue %}
-            {% endif %}
-            {% if member_img_num == "3" %}
-            {% break %}
-            {% endif %}
-            {% endfor %}
-            {% if member_img_num == "3" %}
-            {% break %}
-            {% endif %}
-            {% endfor %}
+        <div class="col s12 m6 img-side">
+          {% assign member_img_num = 0 %}
+          {% for year_group in site.data.members_list %}
+          {% for member in year_group.members %}
+          {% if member.img %}
+          <div class="member-img-container">
+            <img class="responsive-img member-img" src="/img/member/{{ member.img }}" alt="">
           </div>
+          {% capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
+          {% else %}
+          {% continue %}
+          {% endif %}
+          {% if member_img_num == "3" %}
+          {% break %}
+          {% endif %}
+          {% endfor %}
+          {% if member_img_num == "3" %}
+          {% break %}
+          {% endif %}
+          {% endfor %}
         </div>
-        <div class="col s12 m6 vertical-center">
+        <div class="col s12 m6 flex-center">
           <div class="center-align">
             <p>
               会員。
@@ -189,23 +183,19 @@ layout: default
   <section class="section" id="contact">
     <div class="container">
       <h2 class="header">Contact</h2>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <div class="card">
-            <div class="card-content">
-              <div class="col s12 m12 l12">
-                <h3>活動場所</h3>
-                <p>北海道大学構内 サークル会館3階 305号室</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <h3>活動日程</h3>
-                <p>毎週水曜日 18:30- / 毎週土曜日 14:00-</p>
-              </div>
-              <div class="col s12 m12 l12">
-                <h3>E-mail</h3>
-                <p>hal.thiroshi753@gmail.com</p>
-              </div>
-            </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="col s12">
+            <h3>活動場所</h3>
+            <p>北海道大学構内 サークル会館3階 305号室</p>
+          </div>
+          <div class="col s12">
+            <h3>活動日程</h3>
+            <p>毎週水曜日 18:30- / 毎週土曜日 14:00-</p>
+          </div>
+          <div class="col s12">
+            <h3>E-mail</h3>
+            <p>hal.thiroshi753@gmail.com</p>
           </div>
         </div>
       </div>
