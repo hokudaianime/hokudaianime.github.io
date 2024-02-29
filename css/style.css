@@ -87,7 +87,7 @@
 
 /* global */
 html {
-    font-family: "-apple-system","BlinkMacSystemFont","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Segoe UI", "BIZ UDPGothic", "Meiryo", sans-serif;
     line-height: 1.5;
 }
 img { display: block; }
