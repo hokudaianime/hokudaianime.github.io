@@ -154,7 +154,7 @@ layout: default
           {% for member in year_group.members %}
           {% if member.img %}
           <div class="member-img-container">
-            <img class="responsive-img member-img" src="/img/member/{{ member.img }}" alt="">
+            <img class="responsive-img member-img" src="/img/members/{{ member.img }}" alt="">
           </div>
           {% capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
           {% else %}
