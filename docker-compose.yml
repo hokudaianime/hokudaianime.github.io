@@ -1,11 +1,11 @@
 services:
   app:
-    image: jekyll/jekyll:pages
+    image: ghcr.io/github/pages-gem:v231
     command:
       - bash 
       - -c
-      - "gem install webrick && gem install jekyll-seo-tag && jekyll serve --force_polling"
+      - "gem install webrick && jekyll serve -H 0.0.0.0 -P 4000"
     volumes:
-      - .:/srv/jekyll
+      - .:/src/site
     ports:
       - 4000:4000
