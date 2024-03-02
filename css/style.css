@@ -94,7 +94,6 @@ img { display: block; }
 .page-title { padding: 1rem 0; background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); }
 h2{ text-align: center; color:var(--md-sys-color-primary); }
 div .divider { margin: 2px 0; }
-.container { width: 93% }
 .card { height: 100%; }
 .card .card-title { font-weight: normal; }
 .card .card-content { padding: 12px; }
