@@ -1,0 +1,15 @@
+repository: "hokudaianime/hokudaianime.github.io"
+plugins:
+  - "jekyll-seo-tag"
+
+title: "北海道大学アニメーション研究会 HAL 公式Webサイト"
+locale: "ja_JP"
+twitter:
+  username: "hokudai_anime"
+  card: "summary"
+social:
+  name: "北海道大学アニメーション研究会"
+  links:
+    - "https://twitter.com/hokudai_anime"
+    - "https://www.youtube.com/channel/UCmMZU3w1f7JVBlZ3WHIvDaw"
+    - "https://www.instagram.com/hokudai_anime/"
