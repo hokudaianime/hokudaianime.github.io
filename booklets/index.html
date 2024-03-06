@@ -19,7 +19,7 @@ description: 北大アニ研の会誌の紹介ページ。
               <div class="card">
                 <div class="card-image">
                   <div class="booklet-img-container img-container">
-                    <img class="responsive-img booklet-img" src="/img/booklets/{{ booklet.img }}" alt="">
+                    <img class="responsive-img booklet-img" src="/assets/img/booklets/{{ booklet.img }}" alt="">
                   </div>
                 </div>
                 <div class="card-content">
@@ -27,7 +27,7 @@ description: 北大アニ研の会誌の紹介ページ。
                   {{ booklet.description }}
                   <div class="collection">
                     {% for file in booklet.file %}
-                    <a href="/pdf/{{ file.filename }}" class="collection-item">{{ file.title }} [PDF:{{ file.datasize }}]</a>
+                    <a href="/assets/pdf/{{ file.filename }}" class="collection-item">{{ file.title }} [PDF:{{ file.datasize }}]</a>
                     {% endfor %}
                   </div>
                 </div>

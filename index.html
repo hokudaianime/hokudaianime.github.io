@@ -5,7 +5,7 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
 <main class="toppage">
   <section class="page-title" id="toppage-banner">
     <div class="container">
-      <h1><img src="img/hero2.png" width="1235" height="503" alt="北海道大学アニメーション研究会 HAL 公式webサイト"></h1>
+      <h1><img src="/assets/img/hero2.png" width="1235" height="503" alt="北海道大学アニメーション研究会 HAL 公式webサイト"></h1>
     </div>
   </section>
   <section id="intro" class="section">
@@ -97,7 +97,7 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
             {% for work in decade_group.works %}
             <div class="col s4">
               <div class="img-matrix-img-container work-img-container">
-                <img class="responsive-img" src="/img/works/{{ work.img }}" alt="">
+                <img class="responsive-img" src="/assets/img/works/{{ work.img }}" alt="">
               </div>
             </div>
             {% capture work_img_num %}{{ work_img_num | plus: 1 }}{% endcapture %}
@@ -129,7 +129,7 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
         <div class="col s12 m6 img-side">
           {% for booklet in site.data.booklets_list limit:3 %}
           <div class="booklet-img-container">
-            <img class="responsive-img z-depth-1" src="img/booklets/{{ booklet.img }}" alt="">
+            <img class="responsive-img z-depth-1" src="/assets/img/booklets/{{ booklet.img }}" alt="">
           </div>
           {% endfor %}
         </div>
@@ -154,7 +154,7 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
           {% for member in year_group.members %}
           {% if member.img %}
           <div class="member-img-container">
-            <img class="responsive-img member-img" src="/img/members/{{ member.img }}" alt="">
+            <img class="responsive-img member-img" src="/assets/img/members/{{ member.img }}" alt="">
           </div>
           {% capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
           {% else %}
