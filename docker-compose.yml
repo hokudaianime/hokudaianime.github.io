@@ -4,7 +4,7 @@ services:
     command:
       - bash 
       - -c
-      - "gem install webrick && jekyll serve -H 0.0.0.0 -P 4000"
+      - "gem install webrick && jekyll serve -H 0.0.0.0 -P 4000 --force_polling"
     volumes:
       - .:/src/site
     ports:
