@@ -13,3 +13,11 @@ social:
     - "https://twitter.com/hokudai_anime"
     - "https://www.youtube.com/channel/UCmMZU3w1f7JVBlZ3WHIvDaw"
     - "https://www.instagram.com/hokudai_anime/"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      image: "/img/ogp.png"
