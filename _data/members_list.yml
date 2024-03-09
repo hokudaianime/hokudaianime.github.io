@@ -34,9 +34,10 @@
       faculty: "総合理系" 
       description: "I💖人類"
       img: "2023santamaria.png"
-    - name: "工事中"
-      faculty: "工事中" 
-      description: "工事中"
+    - name: "HJ"
+      faculty: "工学部" 
+      description: "今日もいい日だっ！"
+      img: "2023hj.jpg"
 - year: 2022
   members:
     - name: "びこいど"
