@@ -42,6 +42,10 @@
       faculty: "文学部" 
       description: "絵が上手くなりたい。"
       img: "2023st.png"
+    - name: "履修登録"
+      faculty: "経済学部"
+      description: "千葉県"
+      img: "2023rishuutouroku.jpg"
 - year: 2022
   members:
     - name: "びこいど"
@@ -71,4 +75,4 @@
     - name: "ひいらぎ"
       faculty: "生命科学院" 
       description: "編集の人"
-      img: "21hiiragi.png"
+      img: "21hiiragi.jpg"
