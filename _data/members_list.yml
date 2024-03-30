@@ -38,6 +38,10 @@
       faculty: "工学部" 
       description: "今日もいい日だっ！"
       img: "2023hj.jpg"
+    - name: "ST"
+      faculty: "文学部" 
+      description: "絵が上手くなりたい。"
+      img: "2023st.png"
 - year: 2022
   members:
     - name: "びこいど"
