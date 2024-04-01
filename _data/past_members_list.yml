@@ -1,3 +1,9 @@
+- year: 2023
+  members:
+    - name: "ST"
+      faculty: "文学部" 
+      description: "絵が上手くなりたい。"
+      img: "2023st.png"
 - year: 2021
   members:
     - name: "hlnano"
