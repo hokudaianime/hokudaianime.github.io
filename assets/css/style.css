@@ -81,8 +81,8 @@
     --md-sys-color-surface-tint-light: var(--md-ref-palette-primary40);
     --md-sys-color-scrim-light: var(--md-ref-palette-neutral0);
 
-    --md-sys-color-primary-dark: var(--md-ref-palette-primary80);
-    --md-sys-color-on-primary-dark: var(--md-ref-palette-primary20);
+    --md-sys-color-primary-dark: var(--md-ref-palette-primary40); /* default: 80 */
+    --md-sys-color-on-primary-dark: var(--md-ref-palette-primary100); /* default: 20 */
     --md-sys-color-primary-container-dark: var(--md-ref-palette-primary30);
     --md-sys-color-on-primary-container-dark: var(--md-ref-palette-primary90);
     
