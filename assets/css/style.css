@@ -131,7 +131,8 @@ nav ul a { letter-spacing:2px; font-weight:300; }
 .sidenav li a { padding: 0px; }
 
 /* footer */
-footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; color: var(--md-sys-color-on-primary); text-align: start; }
+.page-footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; text-align: start; }
+.page-footer a { color: var(--md-sys-color-outline) }
 
 /* TOP */
 .toppage .section:nth-child(odd) { background:var(--background-color-alt); }
