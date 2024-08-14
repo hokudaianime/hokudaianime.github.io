@@ -133,6 +133,7 @@ nav ul a { letter-spacing:2px; font-weight:300; }
 /* footer */
 .page-footer h2 { font-weight: 400; font-size: 1.64rem; line-height: 110%; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; text-align: start; }
 .page-footer a { color: var(--md-sys-color-outline) }
+.page-footer p { color: var(--md-sys-color-outline) } /* 2.1.0の指定ミス?対策 */
 
 /* TOP */
 .toppage .section:nth-child(odd) { background:var(--background-color-alt); }
