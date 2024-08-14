@@ -99,9 +99,6 @@
     --md-sys-color-inverse-on-surface-dark: var(--md-ref-palette-neutral10);
     --md-sys-color-surface-tint-dark: var(--md-ref-palette-primary80);
     --md-sys-color-scrim-dark: var(--md-ref-palette-neutral0);
-
-    /*--background-color-alt: #f7f7f7;*/
-    --background-color-alt: var(--md-ref-palette-neutral95);
 }
 
 /* global */
@@ -136,7 +133,7 @@ nav ul a { letter-spacing:2px; font-weight:300; }
 .page-footer p { color: var(--md-sys-color-outline) } /* 2.1.0の指定ミス?対策 */
 
 /* TOP */
-.toppage .section:nth-child(odd) { background:var(--background-color-alt); }
+.toppage .section:nth-child(odd) { background:var(--md-sys-color-surface-variant); }
 
 #toppage-banner { max-height: 864px; position: relative; }
 #toppage-banner img { width: 100%; height: auto; }
