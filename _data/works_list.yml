@@ -1,10 +1,5 @@
 - decade: 9990
   works:
-    - title: "空の話（仮）"
-      img: "2023sora.jpg"
-      completion_str: "制作中"
-      director: "ななか"
-      description: "火星の地下に暮らす少女が、友達に誘われて古ぼけた通気管の中に入ってみると、そこには…"
     - title: "影凪（仮）"
       img: "2023kage.jpg"
       completion_str: "制作中"
@@ -13,6 +8,12 @@
       description: "海とヨットで大冒険！"
 - decade: 2020
   works:
+    - title: "空の話"
+      img: "2024sora.jpg"
+      completion_datetime: "2024-06-06"
+      director: "なポリ"
+      length: "7:37"
+      description: "火星の地下に暮らす少女のお話。"
     - title: "マイ・ワード"
       img: "2022my.jpg"
       completion_datetime: "2023-03-13"
