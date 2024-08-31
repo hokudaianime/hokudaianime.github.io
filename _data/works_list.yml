@@ -1,11 +1,5 @@
 - decade: 9990
   works:
-    - title: "影凪（仮）"
-      img: "2023kage.jpg"
-      completion_str: "制作中"
-      director: "びこいど"
-      length: "9:50"
-      description: "海とヨットで大冒険！"
 - decade: 2020
   works:
     - title: "空の話"
@@ -14,6 +8,12 @@
       director: "なポリ"
       length: "7:37"
       description: "火星の地下に暮らす少女のお話。"
+    - title: "影凪"
+      img: "2024kage.jpg"
+      completion_datetime: "2024-06-06"
+      director: "びこいど"
+      length: "11:10"
+      description: "ヨット乗りの少女・ナギと相棒のサンゴロウが大海原で大冒険！"
     - title: "マイ・ワード"
       img: "2022my.jpg"
       completion_datetime: "2023-03-13"
