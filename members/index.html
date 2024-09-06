@@ -20,12 +20,12 @@ description: 北大アニ研の会員の紹介ページ。
         {% for year_group in site.data.members_list %}
         <section class="section">
           <h3>{{ year_group.year }}年度入会</h3>
-          <div class="row card-container">
+          <div class="row g-2">
             {% for member in year_group.members %}
             <div class="col s12 m6 l4">
               <div class="card">
                 <div class="card-content">
-                  <div class="row member-card-content">
+                  <div class="row g-2">
                     <div class="col s6">
                       <div class="member-img-container img-container">
                         {% if member.img %}
