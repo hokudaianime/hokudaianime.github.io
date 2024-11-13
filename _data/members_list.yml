@@ -42,6 +42,10 @@
       faculty: "経済学部"
       description: "千葉県"
       img: "2023rishuutouroku.jpg"
+    - name: "七草"
+      faculty: "工学部"
+      description: "ねじりパンを、享受せよ！"
+      img: "2023nanakusa.jpg"
 - year: 2022
   members:
     - name: "びこいど"
