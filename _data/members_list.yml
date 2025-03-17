@@ -1,3 +1,9 @@
+- year: 2024
+  members:
+    - name: "やきいも"
+      faculty: "工学部"
+      description: "CG担当。歩こう。"
+      img: "2024yakiimo.jpg"
 - year: 2023
   members:
     - name: "にんにく"
