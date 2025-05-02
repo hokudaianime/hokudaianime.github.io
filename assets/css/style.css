@@ -149,6 +149,9 @@ nav ul a { letter-spacing:2px; font-weight:300; }
 #contact h3 {font-weight: 400; font-size: 1.64rem; margin: calc(1.64rem / 1.5) 0 calc(1.64rem / 2.5) 0; }
 #contact .card { background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); }
 
+/* events */
+.event-header {padding: 2px;}
+
 /* works */
 .work-card-container > .col { display: grid; grid-template-rows: subgrid; grid-row: span 5; gap: 0px; }
 .work-card-container .card { display: inherit; grid-template-rows: inherit; grid-row: inherit; gap: inherit; }
