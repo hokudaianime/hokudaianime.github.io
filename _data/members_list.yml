@@ -1,5 +1,8 @@
 - year: 2024
   members:
+    - name: "いけひこ"
+      faculty: "工学部"
+      description: "着色と撮影を担当しています。"
     - name: "matatabi"
       faculty: "文学部"
       description: "睡眠を死守する"
