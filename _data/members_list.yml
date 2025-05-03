@@ -1,5 +1,9 @@
 - year: 2024
   members:
+    - name: "matatabi"
+      faculty: "文学部"
+      description: "睡眠を死守する"
+      img: "2024matatabi.jpg"
     - name: "やきいも"
       faculty: "工学部"
       description: "CG担当。歩こう。"
