@@ -2,6 +2,12 @@
   works:
 - decade: 2020
   works:
+    - title: "Finder!"
+      img: "2025finder.jpg"
+      completion_datetime: "2025-04-20"
+      director: "matatabi"
+      length: "1:56"
+      description: "レンズを通した風景を音楽に合わせて描いた短編作品。"
     - title: "空の話"
       img: "2024sora.jpg"
       completion_datetime: "2024-06-06"
