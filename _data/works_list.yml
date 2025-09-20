@@ -2,6 +2,12 @@
   works:
 - decade: 2020
   works:
+    - title: "喫茶店から出られない！"
+      img: "2025kissaten.jpg"
+      completion_datetime: "2025-08-07"
+      director: "七草"
+      length: "13:26"
+      description: "不思議な喫茶店に迷い込んだ主人公と、奇妙な客達のお話。"
     - title: "Finder!"
       img: "2025finder.jpg"
       completion_datetime: "2025-04-20"
