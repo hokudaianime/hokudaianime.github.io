@@ -1,5 +1,9 @@
 - year: 2024
   members:
+    - name: "みがわり"
+      faculty: "農学部"
+      description: "あんこの素晴らしさに気づいた"
+      img: "2024migawari.jpg"
     - name: "いけひこ"
       faculty: "工学部"
       description: "着色と撮影を担当しています。"
