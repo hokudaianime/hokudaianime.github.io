@@ -14,7 +14,7 @@ description: 北大アニ研の会誌の紹介ページ。
         <h2>会誌</h2>
         <section class="section">
           <div class="row g-2">
-            {% for booklet in site.data.booklets_list %}
+            {%- for booklet in site.data.booklets_list %}
             <div class="col s12 m6 l4 xl3">
               <div class="card">
                 <div class="card-image">
@@ -26,14 +26,14 @@ description: 北大アニ研の会誌の紹介ページ。
                   <div class="card-title">{{ booklet.title }}</div>
                   {{ booklet.description }}
                   <div class="collection">
-                    {% for file in booklet.file %}
+                    {%- for file in booklet.file %}
                     <a href="/assets/pdf/{{ file.filename }}" class="collection-item">{{ file.title }} [PDF:{{ file.datasize }}]</a>
-                    {% endfor %}
+                    {%- endfor %}
                   </div>
                 </div>
               </div>
             </div>
-            {% endfor %}
+            {%- endfor %}
           </div>
         </section>
       </div>
