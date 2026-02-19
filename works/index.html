@@ -13,13 +13,10 @@ description: 北大アニ研の制作作品の紹介ページ。
       <div class="col s12">
         <h2>制作作品</h2>
         {%- for decade_group in site.data.works_list %}
+        {%- if decade_group.works %}
         <section class="section">
           {%- if decade_group.decade == 9990 %}
-          {%- if decade_group.works %}
           <h3>制作中</h3>
-          {%- else %}
-          {%- continue %}
-          {%- endif %}
           {%- else %}
           <h3>{{ decade_group.decade }}年代完成</h3>
           {%- endif %}
@@ -65,6 +62,7 @@ description: 北大アニ研の制作作品の紹介ページ。
             {%- endfor %}
           </div>
         </section>
+        {%- endif %}
         {%- endfor %}
       </div>
     </div>
