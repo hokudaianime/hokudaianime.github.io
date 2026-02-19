@@ -92,23 +92,23 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
       <div class="row">
         <div class="col s12 m6 img-side">
           <div class="row g-1">
-            {% assign work_img_num = 0 %}
-            {% for decade_group in site.data.works_list %}
-            {% for work in decade_group.works %}
+            {%- assign work_img_num = 0 %}
+            {%- for decade_group in site.data.works_list %}
+            {%- for work in decade_group.works %}
             <div class="col s4">
               <div class="img-matrix-img-container work-img-container">
                 <img class="responsive-img" src="/assets/img/works/{{ work.img }}" alt="">
               </div>
             </div>
-            {% capture work_img_num %}{{ work_img_num | plus: 1 }}{% endcapture %}
-            {% if work_img_num == "9" %}
-            {% break %}
-            {% endif %}
-            {% endfor %}
-            {% if work_img_num == "9" %}
-            {% break %}
-            {% endif %}
-            {% endfor %}
+            {%- capture work_img_num %}{{ work_img_num | plus: 1 }}{% endcapture %}
+            {%- if work_img_num == "9" %}
+            {%- break %}
+            {%- endif %}
+            {%- endfor %}
+            {%- if work_img_num == "9" %}
+            {%- break %}
+            {%- endif %}
+            {%- endfor %}
           </div>
         </div>
         <div class="col s12 m6 flex-center">
@@ -127,11 +127,11 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
       <h2 class="header">Booklets</h2>
       <div class="row">
         <div class="col s12 m6 img-side">
-          {% for booklet in site.data.booklets_list limit:3 %}
+          {%- for booklet in site.data.booklets_list limit:3 %}
           <div class="booklet-img-container">
             <img class="responsive-img z-depth-1" src="/assets/img/booklets/{{ booklet.img }}" alt="">
           </div>
-          {% endfor %}
+          {%- endfor %}
         </div>
         <div class="col s12 m6 flex-center">
           <div class="center-align">
@@ -149,25 +149,25 @@ description: 北海道大学アニメーション研究会HALの公式ウェブ�
       <h2 class="header">Members</h2>
       <div class="row">
         <div class="col s12 m6 img-side">
-          {% assign member_img_num = 0 %}
-          {% for year_group in site.data.members_list %}
-          {% for member in year_group.members %}
-          {% if member.img %}
+          {%- assign member_img_num = 0 %}
+          {%- for year_group in site.data.members_list %}
+          {%- for member in year_group.members %}
+          {%- if member.img %}
           <div class="member-img-container">
             <img class="responsive-img member-img" src="/assets/img/members/{{ member.img }}" alt="">
           </div>
-          {% capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
-          {% else %}
-          {% continue %}
-          {% endif %}
-          {% if member_img_num == "3" %}
-          {% break %}
-          {% endif %}
-          {% endfor %}
-          {% if member_img_num == "3" %}
-          {% break %}
-          {% endif %}
-          {% endfor %}
+          {%- capture member_img_num %}{{ member_img_num | plus: 1 }}{% endcapture %}
+          {%- else %}
+          {%- continue %}
+          {%- endif %}
+          {%- if member_img_num == "3" %}
+          {%- break %}
+          {%- endif %}
+          {%- endfor %}
+          {%- if member_img_num == "3" %}
+          {%- break %}
+          {%- endif %}
+          {%- endfor %}
         </div>
         <div class="col s12 m6 flex-center">
           <div class="center-align">
