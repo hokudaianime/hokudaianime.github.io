@@ -2,6 +2,13 @@
   works:
 - decade: 2020
   works:
+    - title: "人骨とアンドロイド"
+      img: "2026jinkotsu.jpg"
+      completion_datetime: "2026-06-05"
+      director: "柚木"
+      length: "14:34"
+      description: "気弱な「りつ」と、元気いっぱいの「みう」の小さな二体が海を越える大冒険！"
+      yt_url: "https://www.youtube.com/watch?v=4HeFlCQy0X8"
     - title: "喫茶店から出られない！"
       img: "2025kissaten.jpg"
       completion_datetime: "2025-08-07"
